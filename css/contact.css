@@ -1,0 +1,522 @@
+@font-face {
+    font-family: "Nunito";
+    src: url("../font/Nunito-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Kalam";
+    src: url("../font/Kalam-Regular.ttf");
+}
+@font-face {
+    font-family: "JainiPurva";
+    src: url("../font/JainiPurva-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3{
+    font-size: 30px;
+    font-family: "Nunito";
+}
+h4{
+    font-family: "Nunito";
+    font-size: 20px; 
+}
+h5{
+    font-family: "Nunito";
+    font-size: 16px;
+    color: rgb(52, 52, 53);
+}
+input{
+    height: 50px;
+}
+input, textarea{
+    width: 300px;
+    padding: 10px 0px 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(233, 232, 233);
+}
+/* nav part */
+a{
+    text-decoration: none;
+    font-size: 23px;
+    color: #a78b02;
+    font-family: "Kalam";
+}
+.mainnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    height: 100px;
+    background-color: #1b051b;
+}
+.logo_text{
+    font-size: 27px;
+    color: #917901;
+    font-family: "JainiPurva";
+    text-shadow: 2px 3px 3px #806b06;
+}
+.logopart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.limg_text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 95px;
+    border-radius: 0px 50px 0px 50px;
+    border: 2px solid rgb(202, 173, 6);
+}
+
+.toggler{
+    font-size: 30px;
+    color: #a78b02;
+    display: none;
+}
+.navlist ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlist ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+.active{
+    color: #cc062b;
+}
+.active:hover{
+    color: #f7d1d8;
+    text-shadow: 5px 3px 3px #f7d1d8;
+}
+.navlist ul li:hover{
+    text-shadow: 5px 3px 3px #a78b02;
+}
+
+/* end */
+
+/* contact part */
+.maincontact{
+    padding: 50px 100px;
+    background-color: rgb(236, 222, 245);
+}
+.upcon{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.con_us{
+    margin-bottom: 40px;
+}
+.con_us h2{
+    font-size: 40px;
+    font-family: "Nunito";
+}
+.context{
+    font-family: "Nunito";
+    font-size: 19px;
+    color: black;
+}
+.lowcon{
+    display: flex;
+    justify-content: space-between;
+}
+.leftcon, .rightcon{
+    width: 40%;
+    background-color: white;
+    border: 3px solid white;
+    padding: 30px;
+}
+#sub{
+    background-color: rgb(198, 154, 240);
+    font-family: "Nunito";
+    font-size: 15px;
+}
+#sub:hover{
+    background-color: blueviolet;
+    box-shadow: 5px 5px 5px rgb(31, 3, 58);
+    color: white;
+}
+.touch, .details{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.add, .phone_no, .email_id{
+    margin-bottom: 30px;
+}
+/* end */
+
+/* footer part */
+p{
+    font-size: 30px;
+    color: #faedaf;
+    font-weight: 300;
+    font-family: "Poppins";
+}
+.footer{
+    padding: 10px 100px;
+    text-align: center;
+    background-color: rgb(37, 35, 35);
+}
+/* end */
+@media screen and (max-width:1199px) {
+    /* nav part */
+    .mainnav{
+        padding: 10px 90px; 
+    }
+    .logo img{
+        width: 70px;
+        border: 1px solid rgb(202, 173, 6);
+        border-radius: 0px 40px 0px 40px;
+    }
+    .logo_text{
+        font-size: 20px; 
+    }
+    a{
+        font-size: 17px;
+    }
+    .navlist ul li{
+        margin: 0px 15px;
+    }
+    /* end */
+    
+    /* contact part */
+    .maincontact{
+        padding: 40px 90px;
+    }
+    .upcon{
+        margin-bottom: 60px;
+    }
+    .con_us{
+        margin-bottom: 30px;
+    }
+    .con_us h2{
+        font-size: 35px;
+        font-family: "Nunito";
+    }
+    .context{
+        font-size: 13px;
+    }
+    .leftcon, .rightcon{
+        width: 45%;
+        padding: 20px;
+    }
+    #sub{
+        font-size: 13px;
+    }
+    .touch, .details{
+        margin-bottom: 17px;
+    }
+    .add, .phone_no, .email_id{
+        margin-bottom: 20px;
+    }
+    iframe{
+        width: 300px;
+        height: 200px;  
+    }
+    /* end */
+
+    /* footer part */
+    .footer{
+        padding: 10px 70px;
+    }
+    /* end */
+}
+@media screen and (max-width:991px) {
+    /* nav part */
+    .mainnav{
+        padding: 10px 70px; 
+    }
+    .logo img{
+        width: 60px;
+        border-radius: 0px 30px 0px 30px;
+    }
+    .logo_text{
+        font-size: 17px; 
+        margin: 0px;
+    }
+    a{
+        font-size: 15px;
+    }
+    .navlist ul{
+        margin: 0;
+        padding: 0;
+    }
+    .navlist ul li{
+        margin: 0px 10px;
+    }
+    /* end */
+
+    /* contact part */
+    h3{
+        font-size: 25px;
+    }
+    h4{
+        font-size: 15px; 
+    }
+    h5{
+        font-size: 13px;
+    }
+    input{
+        height: 40px;
+    }
+    input, textarea{
+        width: 220px;
+        margin-bottom: 15px;
+    }
+    .maincontact{
+        padding: 30px 70px;
+    }
+    .upcon{
+        margin-bottom: 30px;
+    }
+    .con_us{
+        margin-bottom: 20px;
+    }
+    .con_us h2{
+        font-size: 25px;
+    }
+    .context{
+        font-size: 10px;
+    }
+    .leftcon, .rightcon{
+        width: 44%;
+        padding: 10px;
+    }
+    #sub{
+        font-size: 11px;
+    }
+    .touch, .details{
+        margin-bottom: 15px;
+    }
+    .add, .phone_no, .email_id{
+        margin-bottom: 17px;
+    }
+    iframe{
+        width: 250px;
+        height: 150px;  
+    }
+    /* end */
+    
+    /* footer part */
+    .footer{
+        padding: 10px 60px;
+    }
+    .footer p{
+        font-size: 20px;
+    }
+    /* end */
+}
+@media screen and (max-width:767px) {
+/* nav part */
+.mainnav{
+    padding: 10px 50px;
+    flex-direction: column;
+    align-items: center; 
+    height: auto;
+}
+.logo img{
+    width: 50px;
+    border-radius: 0px 20px 0px 20px;
+}
+.logo_text{
+    font-size: 13px;
+}
+a{
+    font-size: 20px;
+}
+.navlist ul li{
+    margin: 0px 4px;    
+}
+.navlist{
+    display: none;
+}
+.logopart{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo img{
+    width: 90px;
+    border-radius: 0px 40px 0px 40px;
+}
+.logo_text{
+    font-size: 30px; 
+}
+.toggler{
+    display: block;
+}
+.navlist ul li{
+    margin-left: 20px;
+}
+.navlist ul{
+    padding: 0px;
+    margin-top: 30px;
+}
+/* end */
+
+/* contact part */
+h3{
+    font-size: 20px;
+}
+h4{
+    font-size: 13px; 
+}
+h5{
+    font-size: 10px;
+}
+input{
+    height: 30px;
+}
+input, textarea{
+    width: 200px;
+    margin-bottom: 13px;
+}
+.maincontact{
+    padding: 20px 50px;
+}
+.upcon{
+    margin-bottom: 20px;
+}
+.con_us{
+    margin-bottom: 15px;
+}
+.con_us h2{
+    font-size: 20px;
+}
+.context{
+    font-size: 7px;
+}
+.leftcon, .rightcon{
+    width: 45%;
+    padding: 5px;
+}
+#sub{
+    font-size: 10px;
+}
+.touch, .details{
+    margin-bottom: 13px;
+}
+.add, .phone_no, .email_id{
+    margin-bottom: 15px;
+}
+iframe{
+    width: 200px;
+    height: 130px;  
+}
+/* end */
+
+/* footer part */
+.footer{
+    padding: 10px 50px;
+}
+.footer p{
+    font-size: 20px;
+}
+/* end */
+}
+@media screen and (max-width:575px) {
+    /* nav part */
+    .mainnav{
+        padding: 10px 30px; 
+    }
+    .icon{
+        position: relative;
+        display: block;
+        line-height: 65px;
+        font-size: 20px;
+        text-align: center;
+        transition: 0.4s;
+    }
+    .icon i{
+        font-size: 15px;
+    }
+    .logo img{
+        width: 60px;
+        border-radius: 0px 30px 0px 30px;
+    }
+    .logo_text{
+        font-size: 17px; 
+    }
+    .toggler{
+        font-size: 25px;
+    }
+    .navlist ul li{
+        margin-left: 0px;
+        margin-bottom: 0px;
+
+    }
+    .navlist ul{
+        padding: 0px;
+        margin: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon{
+        display: none;
+        position: relative;
+    }
+    .navlist ul  li{
+        padding: 0px;
+        margin: 0px;
+        width: 60px;
+        height: 40px;
+    }
+    .text{
+        position: relative;
+        margin-bottom: 0px;
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    /* end */
+
+    /* contact part */
+    .maincontact{
+        padding: 10px 30px;
+    }
+    .upcon{
+        margin-bottom: 20px;
+    }
+    .con_us{
+        margin-bottom: 15px;
+    }
+    .con_us h2{
+        font-size: 20px;
+    }
+    .context{
+        font-size: 10px;
+    }
+    .lowcon{
+        flex-direction: column;
+    }
+    .leftcon, .rightcon{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    iframe{
+        width: 230px;
+        height: 150px;  
+    }
+    /* end */
+
+    /* footer part */
+    .footer{
+        padding: 10px 40px;
+    }
+    .footer p{
+        font-size: 11px;
+    }
+    /* end */
+}

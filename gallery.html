@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/gallery.css">
+    <title>Gallery part</title>
+</head>
+
+<body>
+    <header>
+        <!-- nav part -->
+        <nav>
+            <section>
+                <div class="mainnav">
+                    <div class="logopart">
+                        <div class="limg_text">
+                            <div class="logo">
+                                <img src="./images/navlogo.avif" alt="logo">
+                            </div>
+                            <div class="navtext">
+                                <p class="logo_text">DIOR DESIGNS & EVENTS</p>
+                            </div>
+                        </div>
+                        <div class="toggler">
+                            <i class="fa-solid fa-bars" id="menu-bar"></i>
+                        </div>
+                    </div>
+                    <div class="navlist">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./service.html">Service</a></li>
+                            <li><a href="./gallery.html"  class="active">Gallery</a></li>
+                            <li><a href="./team.html">Team</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </nav>
+        <!-- end -->
+    </header>
+
+    <!-- gallery part -->
+    <section>
+        <div class="main_gallery">
+            <div class="gallery_text">
+                <h3>-:Our Gallery:-</h3>
+            </div>
+            <div class="full_img" id="fullimgBox">
+                <img src="./images/gimg1.jpg" alt="gallery" id="fullimg">
+                <span onclick="closeFullimg()"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+                <div class="gallery1">
+                    <div class="img1">
+                        <img src="./images/gimg1.jpg" alt="gallery" onclick="openFullimg(this.src)">
+                    </div>
+                    <div class="img1">
+                        <img src="./images/gimg2.webp" alt="gallery" onclick="openFullimg(this.src)">
+                    </div>
+                    <div class="img1">
+                        <img src="./images/gimg3.webp" alt="gallery" onclick="openFullimg(this.src)">
+                    </div>
+                </div>
+                <div class="gallery1">
+                    <div class="img1">
+                        <img src="./images/gimg4.jpg" alt="gallery" onclick="openFullimg(this.src)">
+                    </div>
+                    <div class="img1">
+                        <img src="./images/gimg5.jpg" alt="gallery" onclick="openFullimg(this.src)">
+                    </div>
+                    <div class="img1">
+                        <img src="./images/gimg6.jpg" alt="gallery" onclick="openFullimg(this.src)">
+                    </div>
+                </div>
+                <div class="gallery1">
+                    <div class="img1">
+                        <img src="./images/gimg7.jpg" alt="gallery" onclick="openFullimg(this.src)">
+                    </div>
+                    <div class="img1">
+                        <img src="./images/gimg8.webp" alt="gallery" onclick="openFullimg(this.src)">
+                    </div>
+                    <div class="img1">
+                        <img src="./images/gimg9.jpg" alt="gallery" onclick="openFullimg(this.src)">
+                    </div>
+                </div>
+                <div class="gallery1">
+                    <div class="img1">
+                        <img src="./images/gimg10.webp" alt="gallery" onclick="openFullimg(this.src)">
+                    </div>
+                    <div class="img1">
+                        <img src="./images/gimg11.webp" alt="gallery" onclick="openFullimg(this.src)">
+                    </div>
+                    <div class="img1">
+                        <img src="./images/gimg12.jpeg" alt="gallery" onclick="openFullimg(this.src)">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- end -->
+
+    <!-- footer part -->
+    <footer>
+        <div class="footer">
+            <p>Copyright © 2024 DIOR Pvt. Ltd All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- end -->
+
+    <script>
+        var fullimgBox = document.getElementById("fullimgBox");
+        var fullimg = document.getElementById("fullimg");
+
+        function openFullimg(pic) {
+            fullimgBox.style.display = "flex";
+            fullimg.src = pic;
+        }
+        function closeFullimg() {
+            fullimgBox.style.display = "none";
+        }
+    </script>
+    <!-- jquary cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- file js link -->
+    <script src="./js/gallery.js"></script>
+</body>
+
+</html>

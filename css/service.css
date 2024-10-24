@@ -1,0 +1,342 @@
+@font-face {
+    font-family: "EduTASBeginner";
+    src: url("../font/EduTASBeginner-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Kalam";
+    src: url("../font/Kalam-Regular.ttf");
+}
+@font-face {
+    font-family: "JainiPurva";
+    src: url("../font/JainiPurva-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/Poppins-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav part */
+a{
+    text-decoration: none;
+    font-size: 23px;
+    color: #a78b02;
+    font-family: "Kalam";
+}
+.mainnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    height: 100px;
+    background-color: #1b051b;
+}
+.logo_text{
+    font-size: 27px;
+    color: #917901;
+    font-family: "JainiPurva";
+    text-shadow: 2px 3px 3px #806b06;
+}
+.logopart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.limg_text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 95px;
+    border-radius: 0px 50px 0px 50px;
+    border: 2px solid rgb(202, 173, 6);
+}
+
+.toggler{
+    font-size: 30px;
+    color: #a78b02;
+    display: none;
+}
+.navlist ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlist ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+.active{
+    color: #cc062b;
+}
+.active:hover{
+    color: #f7d1d8;
+    text-shadow: 5px 3px 3px #f7d1d8;
+}
+.navlist ul li:hover{
+    text-shadow: 5px 3px 3px #a78b02;
+}
+
+/* end */
+
+/* srevice part */
+.ser_img img{
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+}
+h3{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 26px;
+    font-family: "EduTASBeginner";
+    font-weight: 300;
+    color: #645406;
+}
+.mainservice{
+    padding: 50px 100px;
+    background-color: #300630;
+}
+.service_text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.service_text h2{
+    font-size: 60px;
+    font-family: "EduTASBeginner";
+    font-weight: 300;
+    color: #9F8506;
+}
+.service1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.img_text{
+    border-left: 6px solid #584a03;
+    border-right: 6px solid #584a03;
+    border-radius: 30px;
+    padding-bottom: 20px;
+}
+.img_text:hover{
+    border-radius: 30px;
+    box-shadow: 5px 8px 3px #5c4d05;
+}
+
+/* footer part */
+p{
+    font-size: 30px;
+    color: #faedaf;
+    font-weight: 300;
+    font-family: "Poppins";
+}
+.footer{
+    padding: 10px 100px;
+    text-align: center;
+    background-color: rgb(37, 35, 35);
+}
+/* end */
+@media screen and (max-width:1199px) {
+    /* nav part */
+    .mainnav{
+        padding: 10px 90px; 
+    }
+    .logo img{
+        width: 70px;
+        border: 1px solid rgb(202, 173, 6);
+        border-radius: 0px 40px 0px 40px;
+    }
+    .logo_text{
+        font-size: 20px; 
+    }
+    a{
+        font-size: 17px;
+    }
+    .navlist ul li{
+        margin: 0px 15px;
+    }
+    /* end */
+
+    .ser_img img{
+        width: 250px;
+        height: 250px;
+    }
+    h3{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .mainservice{
+        padding: 30px 70px;
+    }
+    .service_text{
+        margin-bottom: 30px;
+    }
+    .service_text h2{
+        font-size: 60px;
+    }
+
+    /* footer part */
+    .footer{
+        padding: 10px 70px;
+    }
+    /* end */
+}
+@media screen and (max-width:991px) {
+    /* nav part */
+    .mainnav{
+        padding: 10px 70px; 
+    }
+    .logo img{
+        width: 60px;
+        border-radius: 0px 30px 0px 30px;
+    }
+    .logo_text{
+        font-size: 17px; 
+        margin: 0px;
+    }
+    a{
+        font-size: 15px;
+    }
+    .navlist ul{
+        margin: 0;
+        padding: 0;
+    }
+    .navlist ul li{
+        margin: 0px 10px;
+    }
+    /* end */
+
+    .ser_img img{
+        width: 200px;
+        height: 200px;
+    }
+    h3{
+        margin-top: 10px;
+        font-size: 17px;
+    }
+    .mainservice{
+        padding: 30px 60px;
+    }
+    .service_text h2{
+        font-size: 50px;
+    }
+    .service_text{
+        margin-bottom: 20px;
+    }
+
+    /* footer part */
+    .footer{
+        padding: 10px 60px;
+    }
+    .footer p{
+        font-size: 20px;
+    }
+    /* end */
+}
+@media screen and (max-width:767px) {
+    /* nav part */
+    .mainnav{
+        padding: 10px 50px;
+        flex-direction: column;
+        align-items: center; 
+        height: auto;
+    }
+    .logo img{
+        width: 50px;
+        border-radius: 0px 20px 0px 20px;
+    }
+    .logo_text{
+        font-size: 13px;
+    }
+    a{
+        font-size: 20px;
+    }
+    .navlist ul li{
+        margin: 0px 4px;    
+    }
+    .navlist{
+        display: none;
+    }
+    .logopart{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .logo img{
+        width: 90px;
+        border-radius: 0px 40px 0px 40px;
+    }
+    .logo_text{
+        font-size: 30px; 
+    }
+    .toggler{
+        display: block;
+    }
+    .navlist ul li{
+        margin-left: 20px;
+    }
+    .navlist ul{
+        padding: 0px;
+        margin-top: 30px;
+    }
+    /* end */
+    
+    /* service part */
+    .ser_img img{
+        width: 200px;
+        height: 200px;
+    }
+    h3{
+        font-size: 17px;
+    }
+    .mainservice{
+        padding: 20px 50px;
+    }
+    .service_text h2{
+        font-size: 35px;
+    }
+    .img_text{
+        margin-bottom: 20px;
+    }
+    /* end */
+    
+    /* footer part */
+    .footer{
+        padding: 10px 40px;
+    }
+    .footer p{
+        font-size: 11px;
+    }
+    /* end */
+}
+@media screen and (max-width:575px) {
+    /* nav part */
+    .logo img{
+        width: 45px;
+        border-radius: 0px 20px 0px 20px; 
+    }
+    .logo_text{
+        font-size: 16px;
+    }
+    .toggler{
+        font-size: 20px;
+    }
+    .navlist ul{
+        flex-direction: column;
+    }
+    /* end */
+
+    /* service part */
+    .service1{
+        flex-direction: column;
+    }
+    .ser_img img{
+        width: 100%;
+        height: 200px;
+    }
+    /* end */
+}
